@@ -18,8 +18,11 @@ body {
   outline: 2px dotted tomato;
 }
 
-h1, h2, h3, p {
-  margin: 0;  
+h1,
+h2,
+h3,
+p {
+  margin: 0;
 }
 
 body button {
@@ -32,7 +35,13 @@ body button {
   color: var(--font-lead-color);
 }
 
+.header-flexy {
+  display: flex;
+  align-items: center;
+}
+
 .logo-main {
+  margin-right: 93px;
   font-family: Raleway, Tahoma, sans-serif;
   font-size: 26px;
   text-decoration: none;
@@ -50,6 +59,15 @@ body button {
   padding: 0;
 }
 
+.page-header-nav {
+  display: flex;
+}
+
+.page-header-nav .item:not(:last-child),
+.page-header-contacts .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .page-header-nav-link {
   font-size: 14px;
   text-decoration: none;
@@ -63,6 +81,11 @@ body button {
 .page-header-nav-link:hover,
 .page-header-nav-link:focus {
   color: var(--additional-and-hover-color);
+}
+
+.page-header-contacts {
+  display: flex;
+  margin-left: auto;
 }
 
 .page-header-contacts-mail,
@@ -119,6 +142,18 @@ body button {
   margin-bottom: 94px;
 }
 
+.features-list {
+  display: flex;
+}
+
+.features-list > .item {
+  width: 270px;
+}
+
+.features-list > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .features-describer-header {
   font-size: 14px;
   text-transform: uppercase;
@@ -136,6 +171,15 @@ body button {
   margin-bottom: 93px;
 }
 
+.our-business-pics {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-business-pic {
+  display: block;
+}
+
 .sub-header {
   margin-bottom: 50px;
   font-weight: 700;
@@ -149,7 +193,18 @@ body button {
 }
 
 .our-team-img {
+  display: block;
   margin-bottom: 30px;
+}
+
+.our-team-pics {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-team-pics > .item {
+  border: 1px solid var(--font-lead-color);
+  border-radius: 0 0 4px 4px;
 }
 
 .our-team-pic-name,
@@ -164,6 +219,7 @@ body button {
 }
 
 .our-team-pic-rank {
+  margin-bottom: 30px;
   color: var(--font-support-color);
 }
 
@@ -205,6 +261,11 @@ body button {
   margin-bottom: 92px;
 }
 
+.filter-btns {
+  display: flex;
+  justify-content: center;
+}
+
 .filter-btn {
   min-width: 73px;
   height: 38px;
@@ -219,6 +280,10 @@ body button {
   text-align: center;
 }
 
+.filter-btns .item + .item {
+  margin-left: 8px;
+}
+
 .filter-btn:hover,
 .filter-btn:focus {
   background-color: var(--additional-and-hover-color);
@@ -226,7 +291,18 @@ body button {
 }
 
 .portfolio-cards {
-  margin-top: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.portfolio-cards > .item {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.portfolio-card-img {
+  display: block;
 }
 
 .portfolio-card-header {
